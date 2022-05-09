@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body{
+    height: 100vh;
+    background: no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pfp{
+    display: inline-block;
+    padding: 3px;
+    /* background: linear-gradient(130deg, #2c3a47, #828990); */
+    background-image: linear-gradient(90deg, red, blue);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 0% 1px;
+    background-repeat: repeat-y;
+    background-position: left bottom;
+    text-decoration: none;
+}
+
+.pfp:hover {
+    background-size: 100% 1px;
+}
+
+.pfp img{
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-card{
+    width: 300px;
+    text-align: center;
+    border-radius: 5px;
+    background: transparent;
+    overflow: hidden;
+}
+
+.card-header{
+    border-radius: 20px;
+    background: transparent;
+    border: 3px solid whitesmoke;
+    padding: 50px 20px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials a{
+    color: #fff;
+    width: 56px;
+    font-size: 22px;
+    transition: .3s linear;
+}
+
+.socials a:hover{
+    color: rgb(101, 173, 232);
+}
+
+.card-footer{
+    background: #4b5762;
+    border-radius: 20px;
+    border: 3px solid whitesmoke;
+    background: transparent;
+    padding: 5px 5px;
+    /* height: 90px; */
+}
+
+extra {
+    color: white;
+    font-size: smaller;
+    font-weight: lighter;
+}

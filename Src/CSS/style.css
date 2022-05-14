@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 }
 
 
-body{
+body {
     height: 100vh;
     background: no-repeat center;
     background-size: cover;
@@ -40,18 +40,22 @@ body{
 }
 
 .profile-card{
+    /* backdrop-filter: blur(5px); */
     width: 300px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 10px;
     background: transparent;
+    /* border: 3px solid whitesmoke; */
     overflow: hidden;
 }
 
 .card-header{
-    border-radius: 20px;
+    border-radius: 10px;
     background: transparent;
-    border: 3px solid whitesmoke;
-    padding: 50px 20px;
+    backdrop-filter: blur(5px);
+    margin: 0 0;
+    border: 2px solid whitesmoke;
+    padding: 50px 0px;
 }
 
 .socials {
@@ -62,26 +66,44 @@ body{
 
 .socials a{
     color: #fff;
-    width: 56px;
-    font-size: 22px;
+    width: 3vh;
+    font-size: 10px;
     transition: .3s linear;
 }
 
 .socials a:hover{
-    color: rgb(101, 173, 232);
+    color: rgb(101, 104, 255);
 }
 
 .card-footer{
     background: #4b5762;
-    border-radius: 20px;
-    border: 3px solid whitesmoke;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    border: 2px solid whitesmoke;
     background: transparent;
     padding: 5px 5px;
     /* height: 90px; */
 }
 
-extra {
+.more-tags {
+    /* margin: 5vh 1vh; */
+    /* border: 0.1vh solid white; */
+    margin-top: 30px;
+}
+
+.more {
+    padding: 0.25vh 0.5vh;
+    border: 0.1vh;
+    /* background-color: whitesmoke; */
+    background-image: linear-gradient(90deg, rgb(187, 128, 213), white);
+    backdrop-filter: blur(100px);
     color: white;
-    font-size: smaller;
-    font-weight: lighter;
+    border-radius: 1vh;
+    margin: 0 0.25vh;
+    background-size: 0% 1px;
+    /* background-position: bottom; */
+}
+
+.more:hover {
+    color: rgb(101, 104, 255);
 }
